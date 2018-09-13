@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.holle.streak2.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/streak"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/currentDateTextView"
+        android:layout_width="384dp"
+        android:layout_height="75dp"
+        android:text="TextView"
+        android:paddingTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/streak"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/lastDateTextView"-->
+        <!--android:layout_width="383dp"-->
+        <!--android:layout_height="101dp"-->
+        <!--android:text="TextView"-->
+        <!--android:textAlignment="center"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/currentDateTextView"-->
+        <!--tools:layout_editor_absoluteX="1dp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/refresh_button"-->
+        <!--android:layout_width="382dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Refresh"-->
+        <!--android:textAlignment="center"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/lastDateTextView" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/increase_streak"-->
+        <!--android:layout_width="382dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Increase Streak"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/refresh_button"-->
+        <!--tools:layout_editor_absoluteX="-1dp" />-->
+
+    <ImageButton
+        android:id="@+id/wateringcan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:background="@null"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentDateTextView"
+        app:srcCompat="@drawable/watering_can2" />
+
+    <ImageView
+        android:id="@+id/streakImage"
+        android:layout_width="32dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/streak"
+        app:layout_constraintEnd_toStartOf="@+id/streak"
+        app:layout_constraintTop_toTopOf="@+id/streak"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fire1000"
+        android:layout_marginRight="8dp" />
+
+    <ImageView
+        android:id="@+id/flowerpot"
+        android:layout_width="161dp"
+        android:layout_height="197dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toBottomOf="@+id/wateringcan"
+        app:srcCompat="@drawable/flowerpot" />
+
+</android.support.constraint.ConstraintLayout>
